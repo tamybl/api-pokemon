@@ -1,4 +1,99 @@
-.poke-container{
-    display: flex;
-    flex-wrap;
+body{
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1
+{
+    text-align: center;
+}
+
+.encabezado {
+    text-align: center;
+}
+.site-container{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    height: 400px;
+    border: 1px solid white;
+    background-image: url("../img/paisaje.jpg");
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: 3px 5px;
+
+
+}
+
+.container_two{
+padding-top: 20px;
+text-align: center;
+}
+
+.enlinea
+{
+    display: inline-flex;
+}
+
+.datos1{
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    background-image: url("../img/huevo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.datos2{
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    background-image: url("../img/huevo2.jpg");
+    background-size: cover;
+     background-repeat: no-repeat;
+     padding: 20px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.datos3{
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    background-image: url("../img/huevo3.jpg");
+    background-size: cover;
+     background-repeat: no-repeat;
+     margin: 20px;
+     padding: 20px;
+}
+
+.img2-responsive{
+    height: 240px;
+    }
+
+.titulo{
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase; 
+
+}
+
+.titulo2 {
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.texto{
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+#datos_pokemon {
+    text-align: center;
 }
