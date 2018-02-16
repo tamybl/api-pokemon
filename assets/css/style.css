@@ -1,4 +1,47 @@
-.poke-container{
-    display: flex;
-    flex-wrap;
+body{
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.site-container{
+    width: 300px;
+    height: 400px;
+    border: 1px solid white;
+    justify-content: center;
+    background-image: url("../img/paisaje.jpg");
+
+}
+
+.container_two{
+padding-top: 20px;
+justify-content: center;
+}
+
+.datos1{
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    background-image: url("../img/huevo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.datos2{
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    background-image: url("../img/huevo2.jpg");
+    background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.datos3{
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    background-image: url("../img/huevo3.jpg");
+    background-size: cover;
+     background-repeat: no-repeat;
 }

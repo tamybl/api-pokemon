@@ -2,40 +2,59 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>API Pokemon</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.rawgit.com/arafkarim/BootstrapPlusPlus/2d8d0b9d/bpp/bpp.min.css">
+<title>Pokemon</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-   <header class="noticias">
-       <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-xs-12 container-text">
-                   <form action="">
-                    <p>introduzca pokemon separado de una como ejemplo fire,ground</p>
-                    <input type="text" placeholder="enter pokemon">    
-                  </form>
-                  <main class="poke-conatiner">
-                    
-                  </main>
-                </div>
-            </div>
-        </div>
-   
-       
-   </header>
+
+    <div class="container">
+      <div class="row">
+      <div class="col-md-6 col-md-push-3 col-md-pull-3 col-xs-12 ">
+      <header class="masthead">
+      <h1>Busca tu Pokemon</h1>
+      <div class="encabezado">
+        <form action="" id="search-form">
+          <label for="search-keyword" class="visuallyhidden">GO</label>
+          <input id="search-keyword" type="text" name="search-keyword" placeholder="e.g. Android" required>
+          <input id="submit-btn" type="submit" value="SUBMIT">
+        </form>
+      </div>
+    </header>
+  </div>
+ </div>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class=" col-md-5 col-md-push-4 col-md-pull-3 col-xs-12 ">
+      <div class="site-container" id="container">
+        <ul id="datos_pokemon"></ul>
+      </div>
+     </div>
+ </div>
+</div>
+
+<div class="container_two">
+    <div class="row">
+      <div class="col-md-3 col-md-push-3 col-xs-12 ">
+       <div class="datos1" id="container">
+        <ul id="datos_pokemon"></ul>
+      </div>
+     </div>
+     <div class="col-md-3 col-md-push-3 col-xs-12 ">
+       <div class="datos3" id="container">
+        <ul id="datos_pokemon"></ul>
+      </div>
+     </div>
+ </div>
+</div>
 
 
-    <div class="container_noticia">
-        <ul id="response-container"></ul>
-        
-    </div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="assets/app/app.js"></script>
     
 </body>
