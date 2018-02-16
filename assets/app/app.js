@@ -21,42 +21,61 @@ function getPokemon() {
   articleRequest.send();
 }
 
+//funcion de error
 function handleError() {
   console.log('Se ha presentado un error');
 }
 
+//llamando la data
 function addNewPokemon() {
   const data = JSON.parse(this.responseText);
-  //const response = data.response;
   console.log(data);
 
   //console.log(article);
 
-  let li = document.createElement('li');
-  let habilidad = document.createElement('li');
-  let  experiencia = document.createElement('li');
-  let  nombre =  document.createElement('li');
+//Buscando y agregando nombre del pokemon
+let  nom =  document.createElement('span');
+ nom.className = 'titulo'
+const nombre = [];
+  for (let i=0; i < data.forms.length; i++ ){
+    nombre.push(data.forms[i].name);
+  }
+  nom.innerText = nombre;
 
-  //li.className = 'articleClass'
+//Buscando y agregando habilidad de pokemon
+let li = document.createElement('span');
+ li.className = 'texto'
   const pokemon = [];
   for (let i=0; i < data.abilities.length; i++ ){
     pokemon.push(data.abilities[i].ability.name);
-    //console.log(data.abilities);
   }
-
   li.innerText = pokemon;
 
+// Experiencia del pokemon
+ let exp =  document.createElement('span');
+ exp.innerText = data.base_experience;
+ exp.className = "texto"
 //obteniendo la imagen del pokemon
   let img = document.createElement('img');
-  img.className = 'img-responsive'
+  img.className = 'img2-responsive'
   let picture = data.sprites.front_female;
   img.src = picture;
 
+  let hab = document.createElement('span');
+   hab.innerText = 'Habilidad';
+   hab.className = 'titulo2';
 
+ let expTxt = document.createElement('span');
+   expTxt.innerText = 'Experiencia';
+   expTxt.className = 'titulo2'
 
-  
+  datos_pokemon.appendChild(hab);
+  datos_pokemon.appendChild(nom);
   datos_pokemon.appendChild(img);
+  datos_pokemon.appendChild(hab);
   datos_pokemon.appendChild(li);
+  datos_pokemon.appendChild(expTxt);
+  datos_pokemon.appendChild(exp);
 }
 
 
